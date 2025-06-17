@@ -1,0 +1,21 @@
+[project]
+name = "02-uv-litellm-chainlit"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "ibad363", email = "hafizibadurrehman363@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "chainlit>=2.5.5",
+    "litellm>=1.72.6",
+    "python-dotenv>=1.1.0",
+]
+
+[project.scripts]
+02-uv-litellm-chainlit = "02_uv_litellm_chainlit:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

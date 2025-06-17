@@ -1,0 +1,18 @@
+[
+  {
+    "role": "user",
+    "content": "kese ho"
+  },
+  {
+    "role": "assistant",
+    "content": "Mai ek bada bhasha model hu, aur mere pass koi shaaririk sharaer nahi hai, isliye mai thik hu. Mai aapki madad karne ke liye taiyaar hu. Aap kese hai?\n"
+  },
+  {
+    "role": "user",
+    "content": "meri tum se kia bat hui thi abhi thori der pehle remind karao"
+  },
+  {
+    "role": "assistant",
+    "content": "Mujhe maaf karna, meri ek choti si samay me hi data fresh karne ki had hoti hai. Is vajah se, mujhe pichle vartalaap ki yaad nahi hai. Par, mai aapki madad karne ke liye tayar hu. Mujhe bataiye aapko mujhse kya janna hai?\n"
+  }
+]
