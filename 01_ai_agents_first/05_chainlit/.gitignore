@@ -9,5 +9,7 @@ wheels/
 # Virtual environments
 .venv
 
-# Ignore all .env files in root and nested folders
+# .env file
 .env
+
+.chainlit/

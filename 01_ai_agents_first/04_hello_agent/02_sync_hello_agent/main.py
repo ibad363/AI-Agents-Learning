@@ -1,8 +1,7 @@
 import os
 from dotenv import load_dotenv
-from agents import Agent, Runner, OpenAIChatCompletionsModel
+from agents import Agent, Runner, OpenAIChatCompletionsModel, RunConfig
 from openai import AsyncOpenAI
-from agents.run import RunConfig
 
 # Load the environment variables from the .env file
 load_dotenv()
@@ -19,11 +18,13 @@ external_client = AsyncOpenAI(
     base_url="https://generativelanguage.googleapis.com/v1beta/openai/",
 )
 
+# configure model for agent (if openai model is not used, by default openai SDK use gpt-4.1)
 model = OpenAIChatCompletionsModel(
     model="gemini-2.0-flash",
     openai_client=external_client
 )
 
+# setup config for runner (needed, if you want run level configuration)
 config = RunConfig(
     model=model,
     model_provider=external_client, # type: ignore
