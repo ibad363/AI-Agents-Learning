@@ -186,11 +186,9 @@ variants = {
     ),
     "Scientist": base_agent.clone(
         name="Scientist", 
-        instructions="You are a scientist. Be precise and factual.",
         model_settings=ModelSettings(temperature=0.1)
     ),
     "Chef": base_agent.clone(
-        name="Chef",
         instructions="You are a chef. Talk about food and cooking."
     )
 }
